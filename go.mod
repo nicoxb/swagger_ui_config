@@ -1,4 +1,4 @@
-module gitlab.sachsen.cc/swagger/ui_config
+module gitlab.sachsen.cc/cobbles/swagger_ui_config
 
 go 1.24.0
 
