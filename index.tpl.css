@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background: #fafafa;
+}
+.swagger-ui .model-toggle {
+  vertical-align: top;
+  top: 0;
+}
+.swagger-ui table.model tbody tr td:first-of-type {
+  width: 80px;
+}
+.swagger-ui table.model tbody tr.property-row td:first-child {
+  padding: 0.5em 0.5em 0 2em;
+}
+.swagger-ui .model-box {
+  display: inherit;
+  border-radius: 10px;
+}
