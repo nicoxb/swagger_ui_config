@@ -49,7 +49,7 @@ func Handler(options ...func(*SwaggerUIConfig)) http.HandlerFunc {
 				r.URL.Path = "/"
 				docFS.ServeHTTP(w, r)
 			}
-		case "swagger-initializer.js":
+		case "/swagger-initializer.js":
 			_ = indexJS.Execute(w, config)
 		case "index.css":
 			_ = indexCSS.Execute(w, config)
