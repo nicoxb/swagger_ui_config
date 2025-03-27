@@ -43,7 +43,7 @@ func Handler(options ...func(*SwaggerUIConfig)) http.HandlerFunc {
 
 		switch relPath {
 		case "", "/", "index", "index.html", "/index.html":
-			if config.UseIndexTemplate {
+			if !config.DisableIndexTemplate {
 				_ = indexHtml.Execute(w, config)
 			} else {
 				r.URL.Path = "/"

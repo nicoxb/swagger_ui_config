@@ -8,10 +8,10 @@ import (
 
 // SwaggerUIConfig stores swagger configuration variables.
 type SwaggerUIConfig struct {
-	Title            string
-	DocDir           string
-	PathPrefix       string
-	UseIndexTemplate bool
+	Title                string
+	DocDir               string
+	PathPrefix           string
+	DisableIndexTemplate bool
 	// The url pointing to API definition (normally swagger.json or swagger.yaml). Default is `mockedSwag.json`.
 	URLs                 []DefinitionURL
 	DocExpansion         string
@@ -62,9 +62,9 @@ func WithPathPrefix(prefix string) func(*SwaggerUIConfig) {
 	}
 }
 
-func WithIndexTemplate(use bool) func(*SwaggerUIConfig) {
+func WithDisableIndexTemplate(disable bool) func(*SwaggerUIConfig) {
 	return func(c *SwaggerUIConfig) {
-		c.UseIndexTemplate = use
+		c.DisableIndexTemplate = disable
 	}
 }
 
