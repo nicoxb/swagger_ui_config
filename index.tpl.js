@@ -23,7 +23,7 @@ window.onload = function() {
       plugins: [
         SwaggerUIBundle.plugins.DownloadUrl
       ],
-      layout: "TopbarLayout"
+      layout: "StandaloneLayout"
     })
   
     {{if .OAuth}}
